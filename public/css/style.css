@@ -36,6 +36,18 @@ header .topoContainer .topoLogo {
     padding: 15px 50px;
 }
 
+.logo {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 39px;
+    color: #FFFFFF;
+}
+
+.logoLaranja {
+    color: #FEB545
+    ;
+}
+
 /* Box azul claro > preencha o formulário */
 .preenchaContainer {
     background: var(--color-background);
@@ -136,7 +148,7 @@ label {
   }
   
   .toggle:checked + label {
-    background: blue;
+    background: var(--dark-blue);
   }
   
   .toggle:checked + label:before {
