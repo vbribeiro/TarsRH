@@ -1,3 +1,4 @@
+// Ação do botão enviar
 const enviar = document.querySelector('#send');
 
 enviar.addEventListener('click', () => {
@@ -50,6 +51,7 @@ enviar.addEventListener('click', () => {
     console.log(valorMedita);
 });
 
+// Mostra/esconde campo de meditação
 $('[name="check"]').change(function() {
     $('[name="op1"]').toggle(200);
   });
