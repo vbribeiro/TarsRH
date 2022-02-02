@@ -16,6 +16,13 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
+h1 {
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: var(--dark-blue);
+}
+
 /* Topo da página */
 header .topoContainer {
     background: var(--dark-blue);
