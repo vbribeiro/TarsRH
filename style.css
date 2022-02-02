@@ -1,0 +1,196 @@
+/* Configurações iniciais */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-blue: #0E3A82;
+    --color-background: #E5F3FA;
+    --font-color: #767676;
+    --color-white: #FFF;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Topo da página */
+header .topoContainer {
+    background: var(--dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .topoContainer .topoLogo {
+    width: 80%;
+    padding: 15px 50px;
+}
+
+/* Box azul claro > preencha o formulário */
+.preenchaContainer {
+    background: var(--color-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preenchaContainer .preenchaConteudo {
+    width: 80%;
+    padding: 65px 65px;
+}
+
+.preenchaContainer .preenchaConteudo p {
+    font-size: 20px;
+    color: var(--font-color);
+    margin-bottom: 4%;
+}
+
+.preenchaContainer .preenchaConteudo .preenchaConteudoTextoMaior {
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: var(--dark-blue);
+}
+
+/* Formulário */
+.formContainer,
+.formContainer .formContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.formContainer .formContent {
+    width: 55%;
+}
+
+.rowForm {
+    display: flex;
+}
+
+label .textoLabel {
+    color: var(--dark-blue);
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.campos {
+    padding: 8px;
+    border-radius: 11px;
+    border: none;
+    background: #f7f7ff;
+    margin-top: -25px;
+    cursor: pointer;
+}
+
+.campos::placeholder {
+    padding: 0px 0px 0px 10px;
+    color: var(--font-color);
+}
+
+label {
+    margin: 15px 0;
+}
+
+.toggle {
+    display: none;
+  }
+  
+  .toggle + label{
+    width: 35px;
+    height: 24px;
+    background:lightgrey;
+    display: block;
+    position: relative;
+    border-radius: 20px;
+    padding: 2px;
+    transition: 200ms;
+    cursor: pointer;
+  }
+  
+  .toggle + label:before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: white;
+    display: block;
+    border-radius: 50%;
+    right: unset;
+    left: 2px;
+    top: 2px;
+    transition: 200ms;
+  }
+  
+  .toggle:checked + label {
+    background: blue;
+  }
+  
+  .toggle:checked + label:before {
+    content: '';
+    left: calc(100% - 22px);
+    box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
+}
+
+.botaoEnvio {
+    margin: 25px 15px;
+}
+
+.btnEnvio {
+    font-weight: bold;
+    font-size: 14px;
+    background: linear-gradient(180deg, #FC9C36, #FEB545);
+    padding: 15px 50px;
+    border-radius: 11px;
+    text-decoration: none;
+    color: var(--color-white);
+    border: none;
+}
+
+.btnEnvio:hover {
+    background: #FEB545;
+}
+
+.meditaContainer {
+    display: none;
+}
+
+/* Footer */
+.rodapeContainer {
+    width: 100vw;
+    background: var(--dark-blue);
+    padding: 10px 50px;
+    font-size: 20px;
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 0;
+    /* position: fixed; */
+}
+
+/* Mobile */
+
+@media (max-width: 1060px) {
+    header .topoContainer .topoLogo {
+        width: 80%;
+        padding: 15px 50px;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .rodapeContainer {
+        flex-direction: column;
+    }
+
+    .rodapeContainer p {
+        text-align: center;
+        font-size: 15px;
+    }
+}
