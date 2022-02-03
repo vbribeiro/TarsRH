@@ -4,6 +4,8 @@ O prjeto foi construído utilizando:
 
 - HTML5
 - CSS3
+- Bootstrap
+- JQuery
 - JavaScript
 - Node.js
 - MySQL
