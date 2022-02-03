@@ -39,7 +39,7 @@ app.post('/confirmacao.handlebars', (req, res) => {
         peso: req.body.peso,
         altura: req.body.altura,
         dependentes: req.body.dependentes,
-        meditacao: req.body.meditacao,
+        meditacao: req.body.op1,
     }).then(function (){
         res.send("Cadastro realizado com sucesso!");
     }).catch(function (erro) {
